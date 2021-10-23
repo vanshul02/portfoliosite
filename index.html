@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', 'sans-serif';
+        }
+
+        body {
+
+            background-color: whitesmoke;
+        }
+
+        nav {
+            background-color: white;
+            padding: 1rem;
+            position: fixed;
+            z-index: 100;
+            width: 100%;
+            border-bottom: 0.2rem solid grey;
+            font-weight: 600;
+            /* color: grey; */
+            color: #888;
+
+        }
+
+        .navbar {
+            display: inline-block;
+            margin-left: 60%;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin: 0 0.4rem;
+            list-style: none;
+        }
+
+        .navbar li a {
+            /* color: rgb(190, 178, 178);
+            */
+
+            color: #888;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .navbar li a:hover {
+            transition-duration: 300ms;
+            /* color: rgb(0, 162, 255); */
+            color: gold;
+        }
+
+        .empty {
+            width: 100%;
+            height: 4rem;
+        }
+
+        .box {
+            display: flex;
+
+            justify-content: center;
+            height: 44rem;
+            align-items: center;
+            /* margin-top : 30rem; */
+        }
+
+        .small_text {
+            /* color: grey; */
+            color: #888;
+            font-size: 1.6rem;
+        }
+
+        .centerbox {
+            text-align: center;
+        }
+
+        .flexcenter {
+            display: flex;
+            padding: 3rem;
+            justify-content: center;
+        }
+
+        .labelleft {
+            text-align: left;
+            width: 48%;
+            margin-top: 0.7rem;
+            display: inline-block;
+        }
+
+        .labelright {
+            text-align: right;
+            width: 48%;
+            display: inline-block;
+        }
+
+        .greybar {
+            width: 100%;
+            height: 0.4rem;
+            background-color: rgb(185, 185, 185);
+        }
+
+        .goldbar {
+            height: 100%;
+            background-color: gold;
+        }
+
+        .skill {
+            height: 30rem;
+            width: 20rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
+            border-radius: 2%;
+            box-shadow: 2px 2px 5px gray;
+            background-color: white;
+        }
+
+        .skill i {
+            font-size: 3rem;
+            color: gold;
+
+            position: relative;
+            top: 35%;
+            left: -30%;
+        }
+
+        .bigt {
+            font-size: 2rem;
+            font-weight: 600;
+            color: gold;
+            padding: 2.3rem;
+            text-align: left;
+            position: relative;
+            top: 30%;
+        }
+
+        .smallt {
+            font-size: 1rem;
+            padding-left: 2.3rem;
+            color: #888;
+            text-align: left;
+            position: relative;
+            top: 30%;
+        }
+
+        .contact {
+            background-color: gold;
+            height: 20rem;
+            border-radius: 10% 10% 0 0;
+        }
+
+        .innerbox {
+            margin-left: 2rem;
+        }
+
+        .innerbox i {
+            font-size: 3rem;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav>
+            <span style="font-size: 1.5rem;color: gold;">Vanshul Ahuja</span>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="empty"></div>
+    <div class="box">
+        <div class="lefttext">
+            <div style="font-size: 4rem; font-weight: 600;color:gold;"> Hi! I am Vanshul Ahuja</div>
+            <p class="small_text">
+                I am currently a full stack web developer<br /> and a competitive programmer.
+            </p>
+        </div>
+    </div>
+    <div class="about centerbox" id="about" style="height:45rem;">
+        <div style="font-weight: 600; font-size:3rem;color:gold;"> About Me </div>
+        <div class="small_text">My Introduction</div>
+        <div class="innerabout flexcenter">
+            <div class="myimg"
+                style="background-image: url(/self.jpg); height:20rem; width:30rem; background-size: 30rem auto; border-radius: 10px;margin-right: 2rem;">
+            </div>
+            <div class="abouttext small_text" style=" width:30rem;">
+                <div class="empty"></div>
+                Currently a student of the PDPM - Indian Institute of Information Technology, Design and Manufacturing,
+                Jabalpur of branch CSE with skills of full stack web development and basic Data Structures and
+                Algorithms in C++.
+            </div>
+        </div>
+    </div>
+    <div class="Skills centerbox" id="skills" style="height:45rem;">
+        <div style="font-weight: 600; font-size:3rem;color:gold;letter-spacing: 2px;"> Skills </div>
+        <div class="small_text">My Skills</div>
+        <div class="innerskills flexcenter" style="display:flex;">
+            <div class="skilltext small_text" style="width:30rem;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias placeat in deleniti neque earum suscipit
+                temporibus cumque, tempora quam numquam perferendis dolore assumenda. Nemo culpa magni rem
+                necessitatibus saepe natus consequuntur libero.
+            </div>
+            <div class="skillbar" style="width:30rem;padding:0rem 5rem;">
+                <div class="labelleft">HTML</div>
+                <div class="labelright">80%</div>
+                <div class="greybar">
+                    <div class="goldbar" style="width : 80%;"></div>
+                </div>
+                <div class="labelleft">CSS</div>
+                <div class="labelright">60%</div>
+                <div class="greybar">
+                    <div class="goldbar" style="width : 60%;"></div>
+                </div>
+                <div class="labelleft">JavaScript</div>
+                <div class="labelright">50%</div>
+                <div class="greybar">
+                    <div class="goldbar" style="width : 50%;"></div>
+                </div>
+                <div class="labelleft">Node.js</div>
+                <div class="labelright">70%</div>
+                <div class="greybar">
+                    <div class="goldbar" style="width : 70%;"></div>
+                </div>
+                <div class="labelleft">PHP</div>
+                <div class="labelright">70%</div>
+                <div class="greybar">
+                    <div class="goldbar" style="width : 70%;"></div>
+                </div>
+                <div class="labelleft">MySQL</div>
+                <div class="labelright">60%</div>
+                <div class="greybar">
+                    <div class="goldbar" style="width : 60%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services centerbox" id="services" style="height:45rem;">
+        <div style="font-weight: 600; font-size:3rem;color:gold;"> Services </div>
+        <div class="small_text">Services I Offer</div>
+        <div class="innerskill flexcenter">
+            <div class="skill front">
+                <!-- <div class="icon iconfront"></div> -->
+                <i class="uil uil-html5"></i>
+                <div class="bigt">FrontEnd <br /> Developer</div>
+                <div class="smallt">Using HTML CSS JavaScript</div>
+            </div>
+            <div class="skill back">
+                <i class="uil uil-arrow"></i>
+                <div class="bigt">BackEnd <br /> Developer</div>
+                <div class="smallt">Using Node.js PHP MySql</div>
+            </div>
+        </div>
+    </div>
+    <div class="contact centerbox" id="contact">
+        <br />
+        <div style="font-weight: 600; font-size:3rem;color:white;"> Contact Me </div>
+        <div class="small_text">Get In Touch</div>
+        <div class="innercontact flexcenter">
+            <div class="innerbox">
+                <a href="http://www.instagram.com/vanshulahuja_02"><i class="uil uil-instagram"></i></a>
+                <div class="small_text">@vanshulahuja_02</div>
+            </div>
+            <div class="innerbox">
+                <a href="http://www.linkedin.com/in/vanshulahuja02"><i class="uil uil-linkedin"></i></a>
+                <div class="small_text">vanshulahuja02</div>
+            </div>
+            <div class="innerbox">
+                <i class="uil uil-envelope"></i><br />
+                <div class="small_text">vanshul.ahuja@gmail.com</div>
+            </div>
+            <div class="innerbox">
+                <i class="uil uil-phone"></i><br />
+                <div class="small_text">+919649334473</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
