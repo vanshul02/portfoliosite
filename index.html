@@ -18,6 +18,8 @@
             background-color: whitesmoke;
         }
 
+
+
         nav {
             background-color: white;
             padding: 1rem;
@@ -29,6 +31,11 @@
             /* color: grey; */
             color: #888;
 
+        }
+
+        nav span {
+            font-size: 1.5rem;
+            color: gold;
         }
 
         .navbar {
@@ -88,6 +95,32 @@
             justify-content: center;
         }
 
+        .myimg {
+            background-image: url(./self.jpg);
+            height: 20rem;
+            width: 30rem;
+            background-size: 30rem auto;
+            border-radius: 10px;
+            margin-right: 2rem;
+        }
+
+        .abouttext {
+            width: 30rem;
+        }
+
+        .Skills {
+            height: 45rem;
+        }
+
+        .skilltext {
+            width: 30rem;
+        }
+
+        .skillbar {
+            width: 30rem;
+            padding: 0rem 5rem;
+        }
+
         .labelleft {
             text-align: left;
             width: 48%;
@@ -110,6 +143,10 @@
         .goldbar {
             height: 100%;
             background-color: gold;
+        }
+
+        .services {
+            height: 45rem;
         }
 
         .skill {
@@ -164,13 +201,111 @@
             font-size: 3rem;
             color: white;
         }
+
+        @media only screen and (max-width:500px) {
+            nav {
+                padding: 2rem 0rem;
+                width: 100%;
+                text-align: center;
+                position: static;
+            }
+
+            nav span {
+                font-size: 2.5rem;
+            }
+
+            .navbar {
+                display: block;
+                margin-left: 0;
+            }
+
+            .navbar li {
+                display: block;
+                margin: 0 0rem;
+                margin-top: 4%;
+                list-style: none;
+            }
+
+            .navbar li a {
+                font-size: 1.5rem;
+            }
+
+            .empty {
+                width: 100%;
+                height: 0rem;
+            }
+
+            .box {
+                margin-left: 0.7rem;
+            }
+
+            .flexcenter {
+                flex-direction: column;
+            }
+
+            .small_text {
+                text-align: justify;
+            }
+
+            .intxt {
+                text-align: center;
+            }
+
+            .myimg {
+                background-image: url(./self.jpg);
+                height: 13rem;
+                width: 100%;
+                background-size: 100% auto;
+                border-radius: 10px;
+                margin-right: 0;
+            }
+
+            .abouttext {
+                width: 100%;
+                margin-top: 2rem;
+            }
+
+            .Skills {
+                height: 100%;
+            }
+
+            .skilltext {
+                width: 100%;
+            }
+
+            .skillbar {
+                width: 100%;
+                padding: 1rem 0rem;
+            }
+
+            .skill {
+                height: 30rem;
+                width: 100%;
+                margin: 0 0 2rem 0;
+                border-radius: 2%;
+                box-shadow: 2px 2px 5px gray;
+                background-color: white;
+            }
+
+            .services {
+                height: auto;
+            }
+
+            .contact {
+                height: auto;
+            }
+
+            .innerbox {
+                margin-left: 0rem;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header class="header" id="header">
         <nav>
-            <span style="font-size: 1.5rem;color: gold;">Vanshul Ahuja</span>
+            <span>Vanshul Ahuja</span>
             <ul class="navbar">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -183,20 +318,19 @@
     <div class="empty"></div>
     <div class="box">
         <div class="lefttext">
-            <div style="font-size: 4rem; font-weight: 600;color:gold;"> Hi! I am Vanshul Ahuja</div>
-            <p class="small_text">
-                I am currently a full stack web developer<br /> and a competitive programmer.
-            </p>
+            <div class="intxt" style="font-size: 4rem; font-weight: 600;color:gold;"> Hi! I am Vanshul Ahuja</div>
+            <div class="small_text intxt">
+                I am currently a full stack web developer and a competitive programmer.
+            </div>
         </div>
     </div>
     <div class="about centerbox" id="about" style="height:45rem;">
         <div style="font-weight: 600; font-size:3rem;color:gold;"> About Me </div>
-        <div class="small_text">My Introduction</div>
+        <div class="small_text intxt">My Introduction</div>
         <div class="innerabout flexcenter">
-            <div class="myimg"
-                style="background-image: url(./self.jpg); height:20rem; width:30rem; background-size: 30rem auto; border-radius: 10px;margin-right: 2rem;">
+            <div class="myimg">
             </div>
-            <div class="abouttext small_text" style=" width:30rem;">
+            <div class="abouttext small_text">
                 <div class="empty"></div>
                 Currently a student of the PDPM - Indian Institute of Information Technology, Design and Manufacturing,
                 Jabalpur of branch CSE with skills of full stack web development and basic Data Structures and
@@ -204,16 +338,16 @@
             </div>
         </div>
     </div>
-    <div class="Skills centerbox" id="skills" style="height:45rem;">
+    <div class="Skills centerbox" id="skills">
         <div style="font-weight: 600; font-size:3rem;color:gold;letter-spacing: 2px;"> Skills </div>
-        <div class="small_text">My Skills</div>
+        <div class="small_text intxt">My Skills</div>
         <div class="innerskills flexcenter" style="display:flex;">
-            <div class="skilltext small_text" style="width:30rem;">
+            <div class="skilltext small_text">
                 Currently i have proficieny in HTML CSS and JavaScript in the FrontEnd portion and Node.js PHP in
                 BackEnd portion with MySQL as Query Language. I am also learing Data Structures and Algorithms in C++
                 and also i will be adding some more FrontEnd frameworks like React.js in the near future.
             </div>
-            <div class="skillbar" style="width:30rem;padding:0rem 5rem;">
+            <div class="skillbar">
                 <div class="labelleft">HTML</div>
                 <div class="labelright">80%</div>
                 <div class="greybar">
@@ -247,9 +381,9 @@
             </div>
         </div>
     </div>
-    <div class="services centerbox" id="services" style="height:45rem;">
+    <div class="services centerbox" id="services">
         <div style="font-weight: 600; font-size:3rem;color:gold;"> Services </div>
-        <div class="small_text">Services I Offer</div>
+        <div class="small_text intxt">Services I Offer</div>
         <div class="innerskill flexcenter">
             <div class="skill front">
                 <!-- <div class="icon iconfront"></div> -->
@@ -267,23 +401,23 @@
     <div class="contact centerbox" id="contact">
         <br />
         <div style="font-weight: 600; font-size:3rem;color:white;"> Contact Me </div>
-        <div class="small_text">Get In Touch</div>
+        <div class="small_text intxt">Get In Touch</div>
         <div class="innercontact flexcenter">
             <div class="innerbox">
                 <a href="http://www.instagram.com/vanshulahuja_02"><i class="uil uil-instagram"></i></a>
-                <div class="small_text">@vanshulahuja_02</div>
+                <div class="small_text intxt">@vanshulahuja_02</div>
             </div>
             <div class="innerbox">
                 <a href="http://www.linkedin.com/in/vanshulahuja02"><i class="uil uil-linkedin"></i></a>
-                <div class="small_text">vanshulahuja02</div>
+                <div class="small_text intxt">vanshulahuja02</div>
             </div>
             <div class="innerbox">
                 <i class="uil uil-envelope"></i><br />
-                <div class="small_text">vanshul.ahuja@gmail.com</div>
+                <div class="small_text intxt">vanshul.ahuja@gmail.com</div>
             </div>
             <div class="innerbox">
                 <i class="uil uil-phone"></i><br />
-                <div class="small_text">+919649334473</div>
+                <div class="small_text intxt">+919649334473</div>
             </div>
         </div>
     </div>
