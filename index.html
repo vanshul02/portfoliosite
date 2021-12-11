@@ -205,6 +205,20 @@
             color: white;
         }
 
+        .topbutton {
+            display: none;
+            font-size: 3rem;
+            background-color: rgb(255, 196, 0);
+            text-align: center;
+            width: 13%;
+            border-radius: 50%;
+        }
+
+        .topbutton a {
+            text-decoration: none;
+            color: black;
+        }
+
         @media only screen and (max-width:500px) {
             nav {
                 padding: 2rem 0rem;
@@ -301,6 +315,14 @@
             .innerbox {
                 margin-left: 0rem;
             }
+
+            .topbutton {
+                display: block;
+                position: fixed;
+                top: 85%;
+                left: 85%;
+            }
+
         }
     </style>
 </head>
@@ -319,6 +341,9 @@
         </nav>
     </header>
     <div class="empty"></div>
+    <div class="topbutton">
+        <a href="#"><i class="uil uil-arrow-up"></i></a>
+    </div>
     <div class="box">
         <div class="lefttext">
             <div class="intxt" style="font-size: 4rem; font-weight: 600;color:gold;"> Hi! I am Vanshul Ahuja</div>
@@ -346,9 +371,10 @@
         <div class="small_text intxt">My Skills</div>
         <div class="innerskills flexcenter" style="display:flex;">
             <div class="skilltext small_text">
-                Currently i have proficieny in HTML CSS and JavaScript in the FrontEnd portion and Node.js PHP in
-                BackEnd portion with MySQL as Query Language. I am also learing Data Structures and Algorithms in C++
-                and also i will be adding some more FrontEnd frameworks like React.js in the near future.
+                Currently i have proficieny in HTML, CSS, JavaScript and React.JS in the FrontEnd portion and Node.JS,
+                Express.JS, PHP in BackEnd portion with MySQL as Query Language. I am also learing Data Structures and
+                Algorithms in C++ and also i am working on MongoDB to complete my MERN stack. I also have developed many
+                projects adn currently working on inThoughts of which front-end portion is complete.
             </div>
             <div class="skillbar">
                 <div class="labelleft">HTML</div>
@@ -362,11 +388,21 @@
                     <div class="goldbar" style="width : 60%;"></div>
                 </div>
                 <div class="labelleft">JavaScript</div>
-                <div class="labelright">50%</div>
+                <div class="labelright">65%</div>
                 <div class="greybar">
-                    <div class="goldbar" style="width : 50%;"></div>
+                    <div class="goldbar" style="width : 65%;"></div>
                 </div>
-                <div class="labelleft">Node.js</div>
+                <div class="labelleft">React.JS</div>
+                <div class="labelright">70%</div>
+                <div class="greybar">
+                    <div class="goldbar" style="width : 70%;"></div>
+                </div>
+                <div class="labelleft">Node.JS</div>
+                <div class="labelright">70%</div>
+                <div class="greybar">
+                    <div class="goldbar" style="width : 70%;"></div>
+                </div>
+                <div class="labelleft">Express.JS</div>
                 <div class="labelright">70%</div>
                 <div class="greybar">
                     <div class="goldbar" style="width : 70%;"></div>
@@ -377,9 +413,9 @@
                     <div class="goldbar" style="width : 70%;"></div>
                 </div>
                 <div class="labelleft">MySQL</div>
-                <div class="labelright">60%</div>
+                <div class="labelright">75%</div>
                 <div class="greybar">
-                    <div class="goldbar" style="width : 60%;"></div>
+                    <div class="goldbar" style="width : 75%;"></div>
                 </div>
             </div>
         </div>
